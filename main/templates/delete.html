@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete</title>
+</head>
+<body>
+	<h1>{{ book_name }} by {{ author_name }}</h1>
+	<p>Link: <a href="{{ book }}">{{ book }}</a></p>
+	
+	<form method="POST">
+		{% csrf_token %}
+		<input type="submit" name="submit" value="Delete">
+	</form>
+
+	<a href="{% url 'home' %}">All books</a>
+</body>
+</html>

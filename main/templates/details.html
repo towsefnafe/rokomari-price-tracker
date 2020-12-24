@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ book_name }}</title>
+</head>
+<body>
+	<h1>{{ book_name }} by {{ author_name }}</h1>
+	<p>Link: <a href="{{ book }}">{{ book }}</a></p>
+	<p>Original Price: {{ o_price }}</p>
+	<p>Discount Price: {{ s_price }}</p>
+
+	<a href="{% url 'home' %}">All books</a>
+</body>
+</html>
